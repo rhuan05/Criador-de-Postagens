@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagem (automação)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="containerPostagem">
+        <h1>Fazer postagem</h1>
+        <input type="text" class="tituloInput" placeholder="Título do post">
+        <textarea class="postagemInput" cols="80" rows="10" placeholder="Postagem"></textarea>
+        <input type="text" class="autorInput" placeholder="Autor">
+        <button class="postar" onclick="clicouPostar()">Postar</button>
+    </div>
+
+    <div class="containerConteudo">
+        <h1 class="tituloPostagem"></h1>
+        <p class="mensagemPostagem"></p>
+        <p class="autorPostagem"></p>
+        <div class="comentariosPostagem">
+            <div class="comentarioAreaUsuario">
+                <input type="text" class="deixarComentario" placeholder="Deixe o seu comentário">
+                <button class="comentarBtn" onclick="comentar()">Comentar</button>
+            </div>
+            <div class="comentariosPostados"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
